@@ -24,3 +24,36 @@ html, body {
   height: auto; /* 保持图片比例 */
 }
 
+.fixed-navbar {
+  position: fixed; /* 固定位置，不随页面滚动 */
+  top: 20px; /* 导航栏距页面顶部的距离 */
+  right: 20px; /* 导航栏距页面右边的距离 */
+  display: flex;
+  flex-direction: column; /* 垂直排列按钮 */
+  gap: 10px; /* 按钮之间的间距 */
+  z-index: 1000; /* 确保导航栏在页面上方 */
+}
+
+/* 半透明圆形按钮样式 */
+.circle-button {
+  width: 50px; /* 按钮的宽度 */
+  height: 50px; /* 按钮的高度 */
+  border-radius: 50%; /* 使按钮成为圆形 */
+  background-color: rgba(255, 255, 255, 0.3); /* 半透明背景色 */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* 半透明边框 */
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* 添加平滑的悬停效果 */
+}
+
+/* 按钮悬停效果 */
+.circle-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* 鼠标悬停时背景变亮 */
+  border-color: rgba(255, 255, 255, 0.7); /* 鼠标悬停时边框变亮 */
+}
+
+/* 页面内容样式 */
+.content {
+  padding: 20px;
+  text-align: center;
+}
