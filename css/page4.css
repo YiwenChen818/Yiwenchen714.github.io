@@ -14,13 +14,12 @@ html, body {
 
 .banner {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0.1%;
     width: 100%;
-    z-index: 1000; /* 确保横幅位于页面最上层 */
+    z-index: 1000; 
 }
 
 .banner-image {
-    width: 100%; /* 图片占据页面宽度 */
-    height: auto; /* 保持图片比例 */
+    width: 100%; 
 }

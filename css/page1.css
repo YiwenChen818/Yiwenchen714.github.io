@@ -16,44 +16,49 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* 确保横幅位于其他内容上方 */
+  z-index: 1000; 
 }
 
 .banner-image {
-  width: 100%; /* 横幅宽度占满页面 */
-  height: auto; /* 保持图片比例 */
+  width: 100%; 
+  height: auto; 
 }
 
-.fixed-navbar {
-  position: fixed; /* 固定位置，不随页面滚动 */
-  top: 20px; /* 导航栏距页面顶部的距离 */
-  right: 20px; /* 导航栏距页面右边的距离 */
-  display: flex;
-  flex-direction: column; /* 垂直排列按钮 */
-  gap: 10px; /* 按钮之间的间距 */
-  z-index: 1000; /* 确保导航栏在页面上方 */
-}
-
-/* 半透明圆形按钮样式 */
-.circle-button {
-  width: 50px; /* 按钮的宽度 */
-  height: 50px; /* 按钮的高度 */
-  border-radius: 50%; /* 使按钮成为圆形 */
-  background-color: rgba(255, 255, 255, 0.3); /* 半透明背景色 */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* 半透明边框 */
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* 添加平滑的悬停效果 */
-}
-
-/* 按钮悬停效果 */
-.circle-button:hover {
-  background-color: rgba(255, 255, 255, 0.5); /* 鼠标悬停时背景变亮 */
-  border-color: rgba(255, 255, 255, 0.7); /* 鼠标悬停时边框变亮 */
-}
-
-/* 页面内容样式 */
-.content {
-  padding: 20px;
+.image-container {
+  position: relative;
+  width: 100%;
   text-align: center;
+}
+
+.page-image {
+  width: 100%; 
+  height: auto;
+}
+
+
+.oval-button {
+  position: absolute;
+  bottom: 22.9%;
+  left: 51%;
+  transform: translateX(-50%);
+  
+  width: 16vw;
+  height: 7vh;
+  background-color:transparent;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  
+  color: transparent;
+  font-size: 0px;
+  text-align: center;
+  line-height: 7vh; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.oval-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+  color: transparent;
 }

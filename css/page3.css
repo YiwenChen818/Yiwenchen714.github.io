@@ -14,13 +14,52 @@ html, body {
 
 .banner {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     width: 100%;
-    z-index: 1000; /* 确保横幅位于页面最上层 */
+    z-index: 1000; 
 }
 
 .banner-image {
-    width: 100%; /* 图片占据页面宽度 */
-    height: auto; /* 保持图片比例 */
+    width: 100%; 
+    height: auto; 
+}
+
+.image-container {
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+}
+
+.page-image {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.oval-button {
+    position: absolute;
+    bottom: 10vh; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    
+    width: 40vw; 
+    height: 18vh; 
+    background-color: transparent; 
+    border: 2px solid transparent; 
+    border-radius: 50px; 
+    
+    color: transparent; 
+    font-size: 0px; 
+    text-align: center;
+    line-height: 7vh; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.oval-button:hover {
+    background-color: transparent; 
+    border-color: transparent; 
+    color: transparent; 
 }
